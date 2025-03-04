@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kavya</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #ffcccc;
+        font-family: "Arial", sans-serif;
+        text-align: center;
+        color: white;
+        margin: 0;
+      }
+      .heart-container {
+        display: inline-block;
+        position: relative;
+      }
+      .heart {
+        font-size: 200px;
+        display: inline-block;
+        color: red;
+        animation: flip 1.5s infinite;
+      }
+      .text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 25px;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+      }
+      .text .line {
+        display: block;
+      }
+      @keyframes flip {
+        0% {
+          transform: rotateY(0deg);
+        }
+        50% {
+          transform: rotateY(180deg);
+        }
+        100% {
+          transform: rotateY(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="heart-container">
+        <div class="heart">❤</div>
+        <div class="text">
+          <!-- <span class="line">I Love U</span> -->
+          <span class="line">Kavya</span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
